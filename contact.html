@@ -8,31 +8,53 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
+    <header class="header">
+      <a href="#" class="logo">Neha</a>
         <nav class="navbar">
           
-            <a href="index.html">Home</a>
+            <a href="home.html">Home</a>
             <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <a href="education.html">Education</a>
             <a href="skills.html">Skills</a>
-            <a href="courses.html">Courses</a>
+            <a href="contact.html" class="active">Contact</a>
+            
+            
           
         </nav>
       </header>
+      <section class="contact" id="contact">
+        <h2 class="heading">Contact<span> Me!</span></h2>
+        <form id="contactForm" action="#">
+          <div class="input-box">
+            <div class="input-field">
+              <input type="text" placeholder="Full Name" required>
+              <span class="focus"></span>
+            </div>
+            <div class="input-field">
+              <input type="text" placeholder="Email Address" required>
+              <span class="focus"></span>
+            </div>
+          </div>
+          <div class="input-box">
+            <div class="input-field">
+              <input type="number" placeholder="Mobile Number" required>
+              <span class="focus"></span>
+            </div>
+            <div class="input-field">
+              <input type="text" placeholder="Email Subject" required>
+              <span class="focus"></span>
+            </div>
+          </div>
+          <div class="textarea-field">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <span class="focus"></span>
+          </div>
+          <div class="btn-box btns">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+          </form>
 
-  <div class="container">
-    <h1>Contact Me</h1>
-    <form id="contactForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required><br><br>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br><br>
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="4" required></textarea><br><br>
-      <button type="submit">Submit</button>
-    </form>
-    <div id="response"></div>
-  </div>
-
+      </section>
+    
 </body>
 </html>
